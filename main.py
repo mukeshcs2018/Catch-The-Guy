@@ -157,6 +157,7 @@ class TheGame(ItemsFallingFromSky,ScoreBoard):
     def createEnemies(self):
         ItemsFallingFromSky(self.parent, self.canvas, self.playerChar, self.personalboard)
         self.parent.after(1100, self.createEnemies)
+    
 
 
 
@@ -164,3 +165,4 @@ if __name__ == "__main__":
     root = Tk()
     TheGame(root)
     root.mainloop()
+    print("Don't foget to close after use press ctrl + z")
