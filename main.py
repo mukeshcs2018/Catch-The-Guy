@@ -98,7 +98,7 @@ class ItemsFallingFromSky():
         else:
             self.parent.after(self.fallSpeed, self.move_object)
 
-
+    # for key checking
     def check_touching(self):
 
         x0, y0 = self.canvas.coords(self.fallItem)
@@ -146,7 +146,7 @@ class TheGame(ItemsFallingFromSky,ScoreBoard):
 
         self.createEnemies()
 
-
+# for key moving
     def keyMoving(self, event):
         if (event.char == "a") and (self.canvas.coords(self.playerChar)[0] > 50):
             self.canvas.move(self.playerChar, -50, 0)
